@@ -1,0 +1,132 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="7f849538-d129-4ca6-8ecd-fb296f483712" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Fina</ID>
+  <Name>Fina</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:NameMatchingCriteria</Name>
+      <Value>1</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>Fina</DataSourceID>
+  <Schema>
+    <xs:schema id="Fina" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="Fina" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="e69563cc-9b5a-4b94-b241-b4dfcae093e5">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_DIM_Users" msprop:DbTableName="DIM_Users" msprop:FriendlyName="DIM_Users" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="6bb39349-4f16-4549-b7a0-e28b3a1270a1">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="User_ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="User_ID" msprop:DbColumnName="User_ID" msprop:design-time-name="e1d9e1b6-a935-4b7d-8b24-8a66743f279c" type="xs:int" />
+                  <xs:element name="FirstName" msprop:FriendlyName="FirstName" msprop:DbColumnName="FirstName" msprop:design-time-name="86748215-4fe8-459f-a84a-1d7ad643c807" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="LastName" msprop:FriendlyName="LastName" msprop:DbColumnName="LastName" msprop:design-time-name="ff316e1d-c322-44c6-99ca-5f2f167bcba4" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_DIM_Categories" msprop:DbTableName="DIM_Categories" msprop:FriendlyName="DIM_Categories" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="7f16c357-a4f2-48f9-8d10-caae67cb6918">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Category_ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="Category_ID" msprop:DbColumnName="Category_ID" msprop:design-time-name="b018863d-3b76-4173-b837-3aad5cc1ffb0" type="xs:int" />
+                  <xs:element name="CategoryName" msprop:FriendlyName="CategoryName" msprop:DbColumnName="CategoryName" msprop:design-time-name="5c5bb2a0-1e9b-4dbb-877e-cfccabf61c26">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_DIM_Time" msprop:DbTableName="DIM_Time" msprop:FriendlyName="DIM_Time" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="962f0eb6-19d9-4f43-b517-e9da49c65705">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Time_ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="Time_ID" msprop:DbColumnName="Time_ID" msprop:design-time-name="a98f261c-2c44-4c96-911b-260211a70d23" type="xs:int" />
+                  <xs:element name="Year" msprop:FriendlyName="Year" msprop:DbColumnName="Year" msprop:design-time-name="0cc359e1-aa83-406b-adb0-509dd051ae21" type="xs:int" minOccurs="0" />
+                  <xs:element name="Month" msprop:FriendlyName="Month" msprop:DbColumnName="Month" msprop:design-time-name="db497143-698e-43c9-a7ca-d5e1339b2625" type="xs:int" minOccurs="0" />
+                  <xs:element name="Day" msprop:FriendlyName="Day" msprop:DbColumnName="Day" msprop:design-time-name="071716d3-d0fe-4328-9299-d9f5f27f727e" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_FACT_Financials" msprop:DbTableName="FACT_Financials" msprop:FriendlyName="FACT_Financials" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="9660580b-9c04-4fba-8315-4ff761a21785">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="User_ID" msprop:FriendlyName="User_ID" msprop:DbColumnName="User_ID" msprop:design-time-name="1e085828-e6f6-4831-bbf1-f4d5b8d6dd82" type="xs:int" minOccurs="0" />
+                  <xs:element name="Category_ID" msprop:FriendlyName="Category_ID" msprop:DbColumnName="Category_ID" msprop:design-time-name="d127c3b9-9e58-414c-b4ad-fcf0c605b181" type="xs:int" minOccurs="0" />
+                  <xs:element name="Time_ID" msprop:FriendlyName="Time_ID" msprop:DbColumnName="Time_ID" msprop:design-time-name="cfdee41b-28cf-413f-b45f-8e7cbd440085" type="xs:int" minOccurs="0" />
+                  <xs:element name="Amount" msprop:FriendlyName="Amount" msprop:DbColumnName="Amount" msprop:design-time-name="cb28b7c0-479a-4c35-a49b-caf6fdfaa65d" type="xs:decimal" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_DIM_Users" />
+          <xs:field xpath="User_ID" />
+        </xs:unique>
+        <xs:unique name="dbo_DIM_Categories_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_DIM_Categories" />
+          <xs:field xpath="Category_ID" />
+        </xs:unique>
+        <xs:unique name="dbo_DIM_Time_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_DIM_Time" />
+          <xs:field xpath="Time_ID" />
+        </xs:unique>
+      </xs:element>
+      <xs:annotation>
+        <xs:appinfo>
+          <msdata:Relationship name="FACT_Financials-DIM_Users" msdata:parent="dbo_DIM_Users" msdata:child="dbo_FACT_Financials" msdata:parentkey="User_ID" msdata:childkey="User_ID" />
+          <msdata:Relationship name="FACT_Financials-DIM_Categories" msdata:parent="dbo_DIM_Categories" msdata:child="dbo_FACT_Financials" msdata:parentkey="Category_ID" msdata:childkey="Category_ID" />
+          <msdata:Relationship name="FACT_Financials-DIM_Time" msdata:parent="dbo_DIM_Time" msdata:child="dbo_FACT_Financials" msdata:parentkey="Time_ID" msdata:childkey="Time_ID" />
+        </xs:appinfo>
+      </xs:annotation>
+    </xs:schema>
+    <Fina xmlns="" />
+  </Schema>
+</DataSourceView>
